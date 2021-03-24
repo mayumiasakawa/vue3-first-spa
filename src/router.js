@@ -15,25 +15,24 @@ Vue.use(Router);
 export default new Router({
   mode: "history",
   routes: [
-    //ルーティングの設定
     {
-      path: '/',
+      path: "/",
       component: Index
     },
     {
-      path: '/about',
-      component: About,
+      path: "/about",
+      component: About
     },
     {
-      path: '/detail',
-      component: Detail,
+      path: "/detail",
+      component: Detail
     },
     {
       path: "/detail/:id",
       component: DetailId
     },
     {
-      path: '/nest',
+      path: "/nest",
       component: Nest,
       children: [
         {
@@ -41,11 +40,11 @@ export default new Router({
           component: Child1
         },
         {
-          path: 'child2',
-          component: Child2,
+          path: "child2",
+          component: Child2
         },
         {
-          path: 'child3',
+          path: "child3",
           component: Child3
         }
       ]
